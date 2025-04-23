@@ -1,8 +1,10 @@
 class particle{
-    constructor(posX, posY){
+    constructor(posX, posY,r){
       this.x=posX;
       this.y=posY;
       
+      this.radius=r;
+
       this.xDir=random(-3,3);
       this.yDir=random(-3,3);
       
@@ -10,7 +12,7 @@ class particle{
       this.g=random(50,255);
       this.b=random(50,255);
     }
-    display(radius){
+    display(){
       fill(this.r,this.g,this.b);
       noStroke();
       circle(this.x,this.y,radius);
